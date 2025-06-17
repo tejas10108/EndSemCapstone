@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './pomodoro.css';
 
+import Navbar from './Navbar.jsx';
+
 function Pomodoro() {
     const [minutes, setMinutes] = useState(25);
     const [seconds, setSeconds] = useState(0);
@@ -43,6 +45,8 @@ function Pomodoro() {
     };
 
     return (
+        <div>
+        <Navbar/>
         <div className="pomodoro">
             <h1>Pomodoro Timer</h1>
             <div className="timer">
@@ -61,6 +65,7 @@ function Pomodoro() {
                 )}
                 <button onClick={resetTimer}>Reset</button>
             </div>
+        </div>
         </div>
     );
 }
