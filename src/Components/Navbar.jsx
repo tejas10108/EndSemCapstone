@@ -8,8 +8,9 @@ const Navbar = () => {
             <h2>Pomodoro App</h2>
             <ul>
                 <li><Link to="/Pomodoro">Home</Link></li>
-                <li><a href="#">Support</a></li>
+                <li><Link to='/Support'>Support</Link></li>
                 <li><Link to="/About">About</Link></li>
+                
             </ul>
         </div>
     );
