@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 4rem; /* Even more height and width */
+  padding: 1.5rem 4rem; 
   font-family: 'Poppins', sans-serif;
   box-shadow: 0 2px 8px rgba(18, 22, 41, 0.10);
   
@@ -21,7 +21,7 @@
 .navbar h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #EF4444;
+  color: rgb(248, 76, 76);
   margin: 0;
 }
 
@@ -43,13 +43,10 @@
   font-weight: 500;
   padding: 6px 14px;
   border-radius: 6px;
-  transition: color 0.2s, background 0.2s;
+  ;
 }
 
-.navbar ul li a:hover {
-  color: #EF4444;
-  background: #23233a;
-}
+
 
 
 @media (max-width: 600px) {
