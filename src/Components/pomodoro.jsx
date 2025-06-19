@@ -1,7 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './pomodoro.css';
+import './ToDolist.jsx'
 
 import Navbar from './Navbar.jsx';
+import ToDolist from './ToDolist.jsx';
 
 function Pomodoro() {
     const [minutes, setMinutes] = useState(25);
@@ -66,6 +68,7 @@ function Pomodoro() {
                 <button onClick={resetTimer}>Reset</button>
             </div>
         </div>
+        <ToDolist/>
         </div>
     );
 }
