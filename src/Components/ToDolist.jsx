@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Plus, X, Check } from "lucide-react";
 import "./ToDoList.css";
 
 function ToDoList() {
