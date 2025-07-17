@@ -54,8 +54,7 @@ function ToDoList() {
             />
           </div>
           <button type="submit" className="add-button">
-            <Plus size={18} />
-            Add
+            {/* Replaced icon with + emoji */}+ Add
           </button>
         </form>
       </div>
@@ -65,7 +64,7 @@ function ToDoList() {
         {tasks.length === 0 ? (
           <div className="empty-state">
             <div className="empty-icon">
-              <Check size={24} />
+              {/* Replaced icon with ✓ emoji */}✓
             </div>
             <p className="empty-title">No tasks yet</p>
             <p className="empty-subtitle">
@@ -82,7 +81,7 @@ function ToDoList() {
                     onClick={() => toggleTask(task.id)}
                     className={`todo-checkbox ${task.done ? "checked" : ""}`}
                   >
-                    {task.done && <Check size={12} />}
+                    {task.done ? "✓" : ""}
                   </button>
 
                   {/* Task Text */}
@@ -98,7 +97,7 @@ function ToDoList() {
                     onClick={() => deleteTask(task.id)}
                     className="delete-button"
                   >
-                    <X size={16} />
+                    {/* Replaced icon with ✗ emoji */}✗
                   </button>
                 </div>
               </li>
