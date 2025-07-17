@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./ToDoList.css";
+import "./ToDolist.css";
 
-function ToDoList() {
+function ToDolist() {
   const [tasks, setTasks] = useState([]);
   const [input, setInput] = useState("");
 
@@ -54,7 +54,7 @@ function ToDoList() {
             />
           </div>
           <button type="submit" className="add-button">
-            {/* Replaced icon with + emoji */}+ Add
+            + Add
           </button>
         </form>
       </div>
@@ -63,9 +63,7 @@ function ToDoList() {
       <div className="todo-list-container">
         {tasks.length === 0 ? (
           <div className="empty-state">
-            <div className="empty-icon">
-              {/* Replaced icon with ✓ emoji */}✓
-            </div>
+            <div className="empty-icon">✓</div>
             <p className="empty-title">No tasks yet</p>
             <p className="empty-subtitle">
               Add your first task above to get started
@@ -97,7 +95,7 @@ function ToDoList() {
                     onClick={() => deleteTask(task.id)}
                     className="delete-button"
                   >
-                    {/* Replaced icon with ✗ emoji */}✗
+                    ✗
                   </button>
                 </div>
               </li>
@@ -129,4 +127,4 @@ function ToDoList() {
   );
 }
 
-export default ToDoList;
+export default ToDolist;
